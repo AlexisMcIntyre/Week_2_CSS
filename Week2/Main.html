@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--This link joins this sheet with the styles sheet containing the CSS-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>My International Trips</title>
+     <h1>My International Trips</h1>
+
+</head>
+
+
+<body>
+    <div class="box">
+
+    <!--I created an id here to refer specifically to the flags that would be diplayed on the main page, since they would have different properties than the ones called by the style I applied to all "img" elements-->
+
+            <img id="main" src="flag_japan.JPG" alt="Japanse flag">
+            <img id="main" src="flag_guatemala.JPG" alt="Guatemalan flag">
+            <img id="main" src="flag_brazil.JPG" alt="Brazilian flag">
+
+    <section>
+
+        <!--I created a "box" class...very original. This was specifically for the main page text and some images, however, I was not successful getting the parts within this box to do what I wanted them to do, so I had to create another class below-->
+
+            
+            <p>
+    I've had the opportunity to visit some cool international destinations! I will share my favorites along with
+     some tips on what to visit and do! Boa viagem!!!
+            </p>
+
+        </div>
+    </section>
+
+    <!--Here is the next "box" class I create, "boxwin". It was supposed to go inside of the box above, but I was not able to successfully do that. I still need to learn more about how to format within the containers.
+    
+    Anyway, I used this box to place my links to the other pages, and added some fun visual effects that you can see in my styles sheet.-->
+
+<div class="boxwin">
+    <h2>Check them out:</h2>
+
+<li><a href="Japan.html">Japan</a></li>
+<li><a href="Guatemala.html">Guatemala</a></li>
+<li><a href="Brazil.html">Brazil</a></li>
+</div>
+
+ <section>
+
+
+    <div class="newsletter">
+        
+    <h3>Join my newsletter!</h3>
+
+    <form>
+        <input type="text" name="firstname" placeholder="first name"><br>
+        <input type="text" name="lastname" placeholder="last name"><br>
+        <input type="text" name="email" placeholder="email"><br>
+        <br>
+        Which country mentioned would you most want to visit?<br>
+        <input type="radio" name="destination" value="Japan">Japan<br>
+        <input type="radio" name="destination" value="Guatemala">Guatemala<br>
+        <input type="radio" name="destination" value="Brazil">Brazil<br>
+        <br>
+        Which country should I visit next?<br>
+        <input type="radio" name="nextdestination" value="Greece">Greece<br>
+        <input type="radio" name="nextdestination" value="Chile">Chile<br>
+        <input type="radio" name="nextdestination" value="Canada">Canada<br>
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
+</section>
+</main>
+</body>
+
+
+<footer>Created by Alexis McIntyre</footer>
+</html>

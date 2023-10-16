@@ -1,0 +1,194 @@
+
+/*I styled the entirety of each page using the "html" element that styles everything between the html tags. This gave all pages the background gradient and the Ariel family of fonts.*/
+
+html {
+    background:linear-gradient(rgb(206, 212, 214), rgb(227, 196, 163));
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*I styled all the "h1" elements with color, font effects, and alignment, also including a fun drop-shadow effect. Same for the h2 & h3 elements, where I gave them a center alignment and underlined the text*/
+
+h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    filter: drop-shadow(10px 5px 1px rgb(115, 136, 143));
+}
+
+h2, h3 {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*I styled the "a" elements, which all link to other pages with a few styles below. The basic link is black, the visited link changes color to a grey color, and I also added a fun hover effect where when you mouse over the link, the text will turn black and have a highlight of  orange behind it.*/
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: rgb(115, 136, 143);
+}
+a:hover {
+  color:  black;
+  background-color: rgb(224, 144, 110);
+}
+
+/*I created and styled the "flags" id to specifically refer to the flag images that I used on the destination pages (Brazil, Guatemala, Japan). I set the height to 50px, and then auto for the width so that the height was specific and the width would adjust based on that. I put in some border properties that display a neat double-lined grey border. I experimented with overwriting the styles I did below for all "img" elements by setting the scale and transition as "none". It did indeed overwrite the styles I set for all "img" elements.   */
+
+#flags {
+  width: auto;
+  height: 50px;
+  border-color: rgb(115, 136, 143);
+  border-width: 1px;
+  border-radius: 1px;
+  transition: none;
+  scale: none;
+
+}
+
+/*This is the styling for the flag images specifically on my main page. I added a padding and margin to space them out from one another and from the text that is also within the box. */
+
+#main {
+  width: auto;
+  height: 100px;
+  transition: none;
+  scale: none;
+  border: none;
+  margin: 10px;
+  padding: 30px;
+}
+
+/* I styled the ordered and unordered lists to have the Lucinda Sans font family, and snapped the text to the Left to give it a nicer look, and I learned how to use the "list-style-position" so that the bullet points/numbers would snap to the text! */
+
+ul, ol {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+  list-style-position: inside;
+  border-style: solid;
+  background-color: rgb(224, 144, 110);
+  padding: 10px;
+  margin: 10px;
+
+}
+
+/* Here a made a flexbox to play with the concept. I told the browser there is a flexbox with "display" and I told it the items should display as a row, rather than a column. Then I told it to wrap the items if the window is resized. I have it placing the contents of the box by centering them within said box, so that no matter how large the box gets, it will have the contents centered. I added a specific bottom margin of 50px to give it more space between the box below it.*/
+
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: rgb(224, 144, 110);
+  border-style: solid;
+  border-color: rgb(115, 136, 143);
+  border-width: 5px;
+
+}
+
+
+.boxwin {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(206, 212, 214);
+  padding: 10px;
+  border-style: solid;
+  border-color: rgb(115, 136, 143);
+  border-width: 5px;
+
+}
+
+/*Here is another flexbox where the content wraps. I made this class specifically for the box at the start of each destination page. */
+
+.textbox{
+  margin:auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(224, 144, 110);
+    padding: 5px;
+    border-style: double;
+    border-color: rgb(115, 136, 143);
+    border-width: 10px;
+    
+      
+}
+
+.newsletter {
+   margin:auto;
+   margin-top: 50px;
+   margin-bottom: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(224, 144, 110);
+    padding: 5px;
+    border-style: dashed;
+    border-color: rgb(115, 136, 143);
+    border-width: 5px;
+
+}
+
+/*I styled all the "img" elements to have rounded edges by setting the border radius as 30px. If the border-radius of an image is the same dimension size as the specified w/h then it will be a circle. I gave them a margin of 5px so that the border I assigned to them would look sylish with the space between it and the image. I styled all the images to have a really cool effect where they enlarge to be 2x larger than the original size displayed when they are hovered over with the mouse. This is with the transition where the time it takes for the image to scale is 400ms and the object-fit is set to cover, which means it covers the content around it when enlarged. The scale of the enlarged image when the mouse is hovering over it is 2x as shown in the "img:hover" selector. 
+
+This is my favorite part of the website!!!!!!*/
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: rgb(224, 144, 110);
+    border-width: 5px;
+    padding: 3px;
+    margin: 5px;
+    float: left;
+    transition: scale 400ms;
+    object-fit: cover;
+}
+
+img:hover{
+  scale: 2;
+}
+
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.table {
+    background-color: rgb(224, 144, 110);
+    border-style: solid;
+    border-color: rgb(115, 136, 143);
+
+}
+
+/* For all table data elements, I styled them with specific border widths just to play around with styling borders on each side of the cells.*/
+
+
+td {
+    text-align: left;
+    border-style: solid;
+    border-top-width: 2px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 2px;
+    border-color: rgb(115, 136, 143);
+
+}
+
+footer {
+  padding: 10px;
+  color: rgb(115, 136, 143);
+}
